@@ -17,5 +17,5 @@ class OnConnect(commands.Cog, name="On Connect"):
     async def on_connect(self):
         global alreadyStartedRefreshLoop
         if not alreadyStartedRefreshLoop:
-            await animalBroker.startRefreshCycle()
+            # await animalBroker.startRefreshCycle()
             alreadyStartedRefreshLoop = True
