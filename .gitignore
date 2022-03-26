@@ -1,4 +1,3 @@
-config.py
-venv
-Pipfile.lock
+config.json
 .idea
+node_modules
