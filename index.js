@@ -10,6 +10,13 @@ const autoposter = AutoPoster(config.topGGToken, client)
 
 client.once('ready', () => {
     console.log(`${client.user.username} is ready!`)
+
+    // Client activity
+    let activityObject = { activities: [{ type: 'WATCHING', name: "for /animal-bot-info" }], status: "online" }
+    setInterval(() => {
+        client.user.setPresence(activityObject)
+    }, 1000*60*60)
+    client.user.setPresence(activityObject)
 })
 
 /*
