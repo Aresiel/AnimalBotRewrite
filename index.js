@@ -16,7 +16,14 @@ client.once('ready', () => {
     TEMPORARY DURING MIGRATION
     While the bot migrates to slash commands, the old help commands will inform users of the migration.
  */
-//client.on("messageCreate")
+client.on("messageCreate", message => {
+    if(message.content.toLowerCase().startsWith("a!help")){
+        const embed = new MessageEmbed()
+            .setTitle("Migrated to slash commands")
+            .setDescription("The bot has migrated to slash commands, please type / in order to see the commands. (:")
+        message.channel.send({embeds: [embed]})
+    }
+})
 
 client.on('interactionCreate', async interaction => {
     if(!interaction.isCommand()) return;
