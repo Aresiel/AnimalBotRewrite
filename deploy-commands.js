@@ -13,8 +13,7 @@ const commands = [
     new SlashCommandBuilder().setName('panda').setDescription('All pandas aren\'t black and white.'),
     new SlashCommandBuilder().setName('otter').setDescription('A cute otter.'),
     new SlashCommandBuilder().setName('animal-bot-info').setDescription('Contact info, privacy policy, etc.'),
-]
-    .map(command => command.toJSON());
+].map(command => command.toJSON());
 
 const rest = new REST({ version: '9' }).setToken(token);
 
