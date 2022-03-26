@@ -4,6 +4,10 @@ const fetch = require("node-fetch")
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
+// Top.gg stats autoposter
+const { AutoPoster } = require('topgg-autoposter')
+const autoposter = AutoPoster(config.topGGToken, client)
+
 client.once('ready', () => {
     console.log(`${client.user.username} is ready!`)
 })
