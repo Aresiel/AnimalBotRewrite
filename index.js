@@ -126,5 +126,9 @@ function updateImages(){
 
 setInterval(updateImages, 1000*60*15) // Update every 15 minutes
 updateImages()
+updateImages()
+updateImages()
+updateImages()
+updateImages()
 
 client.login(config.token)
