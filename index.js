@@ -27,7 +27,7 @@ client.on("messageCreate", message => {
     if(message.content.toLowerCase().startsWith("a!help")){
         const embed = new MessageEmbed()
             .setTitle("Migrated to slash commands")
-            .setDescription("**IF YOU CAN'T USE THE BOT, KICK IT AND INVITE IT AGAIN USING [THIS LINK](https://discord.com/api/oauth2/authorize?client_id=511117189835653150&permissions=52288&scope=applications.commands%20bot). IF THAT DOESN'T WORK, CONTACT ME @Aresiel#0666 FOR SUPPORT.\nThe bot has migrated to slash commands, please type / in order to see the commands. (:")
+            .setDescription("**IF YOU CAN'T USE THE BOT, KICK IT AND INVITE IT AGAIN USING [THIS LINK](https://discord.com/api/oauth2/authorize?client_id=511117189835653150&permissions=52288&scope=applications.commands%20bot). IF THAT DOESN'T WORK, CONTACT ME @Aresiel#0666 FOR SUPPORT.**\nThe bot has migrated to slash commands, please type / in order to see the commands. (:")
         message.channel.send({embeds: [embed]})
     }
 })
